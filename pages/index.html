@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>this is a test page</title>
+	</head>
+	<body>
+		<h1>this is a header</h1>
+		<div class="socket" id="socket-1"></div>
+		<div class="socket" id="socket-2"></div>
+	</body>
+	<script type="module">
+		'use strict'
+		import { pageInit } from './scripts/front-render.js'
+		window.addEventListener('DOMContentLoaded', async () => {
+			await pageInit()
+		})
+	</script>
+</html>
